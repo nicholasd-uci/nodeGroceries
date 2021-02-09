@@ -1,0 +1,26 @@
+{
+  "name": "nodeGroceries",
+  "version": "1.0.0",
+  "description": "This repository consist of constructors and running test for our constructors. This application is a server-side application that is meant for grocery list purposes.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicholasd-uci/nodeGroceries.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicholasd-uci/nodeGroceries/issues"
+  },
+  "homepage": "https://github.com/nicholasd-uci/nodeGroceries#readme",
+  "dependencies": {
+    "jest": "^26.6.3"
+  }
+}
