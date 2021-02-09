@@ -8,5 +8,5 @@ test('New beverage should be instance of constructor', () => {
 
 test('getMainFlavor() return the main flavor', () => {
     const beverage = new Beverage('tropical', 20, 1.25, 12, 'berryBlast')
-    expect(beverage.mainFlavor()).toBe('berryBlast')
+    expect(beverage.getMainFlavor()).toBe('berryBlast')
 })
