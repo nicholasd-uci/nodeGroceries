@@ -14,6 +14,16 @@ let products = []
 //     message: 'Enter Product Food Group:'
 // }
 
+const subMenu = () => {
+    prompt([
+        {
+            type: 'list',
+            name: 'action',
+            choice: ['Make Another Product', 'Finish'],
+            message: 'What would you like to do?'
+        }
+    ])
+}
 
 const mainMenu = () => {
     prompt([
