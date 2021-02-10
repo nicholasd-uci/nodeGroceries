@@ -30,6 +30,26 @@ prompt([
     .catch(err => console.log(err))
 }
 
+const buildBeverage = product => {
+    prompt([
+        {
+            type: 'input',
+            name: 'fluidOZ',
+            message: 'Enter fluid OZs'
+        },
+        {
+            type: 'input',
+            name: 'mainFlavor',
+            message: 'Enter the flavor'
+        }
+    ])
+    .then(({ fluidOZ, mainFlavor }) => {
+        product.push(new Beverage(product.name, product.quantity, product.price, product.fluidOZ, product.mainFlavor))
+        subMenu()
+    })
+    .catch(err => console.log(err))
+}
+
 const subMenu = () => {
     prompt([
         {
