@@ -2,6 +2,10 @@ const { prompt } = require('inquirer')
 const fs = require('fs')
 const path = require('path')
 
+// const render = require
+
+const Product = require('./lib/Product.js')
+
 let products = []
 
 
@@ -27,11 +31,11 @@ const subMenu = () => {
     ])
     .then(({ action }) => {
         switch (action) {
-            case 'Make Another Choice':
+            case 'Make Another Product':
                 mainMenu()
                 break
             case 'Finish':
-                const html = render(product)
+                const html = render(products)
                 fs.writeFileSync(path.join(__dirname, 'output', 'index.html'), html)
                 break
         }
