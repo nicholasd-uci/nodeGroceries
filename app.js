@@ -2,23 +2,33 @@ const { prompt } = require('inquirer')
 const fs = require('fs')
 const path = require('path')
 
-// const render = require
+const render = require('./lib/render.js')
 
 const Product = require('./lib/Product.js')
+const Food = require('./lib/Food.js')
+const Beverage = require('./lib/Beverage.js')
 
 let products = []
 
-
-// {
-//     type: 'input',
-//     name: 'expirationDate',
-//     message: 'Enter Product Expiration Date:'
-// },
-// {
-//     type: 'input',
-//     name: 'foodGroup',
-//     message: 'Enter Product Food Group:'
-// }
+const buildFood = product => {
+prompt([
+        {
+            type: 'input',
+            name: 'expirationDate',
+            message: 'Enter Product Expiration Date:'
+        },
+        {
+            type: 'input',
+            name: 'foodGroup',
+            message: 'Enter Product Food Group:'
+        }
+    ])
+    .then(({ expirationDate, foodGroup }) => {
+        product.push(new Food(product.name, product.quantity, product.price, expirationDate, foodGroup))
+        subMenu()
+    })
+    .catch(err => console.log(err))
+}
 
 const subMenu = () => {
     prompt([
