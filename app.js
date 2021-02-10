@@ -1,4 +1,6 @@
 const { prompt } = require('inquirer')
+const fs = require('fs')
+const path = require('path')
 
 let products = []
 
@@ -23,6 +25,18 @@ const subMenu = () => {
             message: 'What would you like to do?'
         }
     ])
+    .then(({ action }) => {
+        switch (action) {
+            case 'Make Another Choice':
+                mainMenu()
+                break
+            case 'Finish':
+                const html = render(product)
+                fs.writeFileSync(path.join(__dirname, 'output', 'index.html'), html)
+                break
+        }
+    })
+    .catch(err => console.log(err))
 }
 
 const mainMenu = () => {
