@@ -66,7 +66,7 @@ const subMenu = () => {
                 break
             case 'Finish':
                 const html = render(products)
-                fs.writeFileSync(path.join(__dirname, 'output', 'main.html'), html)
+                fs.writeFileSync(path.join(__dirname, 'output', 'index.html'), html)
                 break
         }
     })
