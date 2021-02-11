@@ -33,7 +33,7 @@ prompt([
 const buildBeverage = product => {
     prompt([
         {
-            type: 'input',
+            type: 'number',
             name: 'fluidOZ',
             message: 'Enter fluid OZs'
         },
