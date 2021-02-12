@@ -55,7 +55,7 @@ const subMenu = () => {
         {
             type: 'list',
             name: 'action',
-            choice: ['Make Another Product', 'Finish'],
+            choices: ['Make Another Product', 'Finish'],
             message: 'What would you like to do?'
         }
     ])
