@@ -94,7 +94,6 @@ const mainMenu = () => {
             name: 'price',
             message: 'Enter product price:'
         }
-        
     ])
     .then(product => {
         switch (product.type) {
