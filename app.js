@@ -51,14 +51,12 @@ const buildBeverage = product => {
 }
 
 const subMenu = () => {
-    prompt([
-        {
+    prompt({
             type: 'list',
             name: 'action',
             choices: ['Make Another Product', 'Finish'],
             message: 'What would you like to do?'
-        }
-    ])
+        })
     .then(({ action }) => {
         switch (action) {
             case 'Make Another Product':
