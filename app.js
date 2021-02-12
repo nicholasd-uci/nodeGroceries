@@ -24,7 +24,7 @@ prompt([
         }
     ])
     .then(({ expirationDate, foodGroup }) => {
-        product.push(new Food(product.name, product.quantity, product.price, expirationDate, foodGroup))
+        products.push(new Food(product.name, product.quantity, product.price, expirationDate, foodGroup))
         subMenu()
     })
     .catch(err => console.log(err))
@@ -35,16 +35,16 @@ const buildBeverage = product => {
         {
             type: 'number',
             name: 'fluidOZ',
-            message: 'Enter fluid OZs'
+            message: 'Enter the fluid oz:'
         },
         {
             type: 'input',
             name: 'mainFlavor',
-            message: 'Enter the flavor'
+            message: 'Enter the main flavor:'
         }
     ])
     .then(({ fluidOZ, mainFlavor }) => {
-        product.push(new Beverage(product.name, product.quantity, product.price, product.fluidOZ, product.mainFlavor))
+        products.push(new Beverage(product.name, product.quantity, product.price, fluidOZ, mainFlavor))
         subMenu()
     })
     .catch(err => console.log(err))
