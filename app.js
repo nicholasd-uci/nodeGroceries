@@ -101,7 +101,7 @@ const mainMenu = () => {
     .then(product => {
         switch (product.type) {
             case 'General Product':
-                products.push(new product(product.name, product.quantity, product.price))
+                products.push(new Product(product.name, product.quantity, product.price))
                 subMenu()
                 break
             case 'Food':
