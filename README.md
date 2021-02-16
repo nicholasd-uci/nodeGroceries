@@ -29,6 +29,16 @@ After all constructors are successfully tested proceed to make a render.js file
 
 > node_modules
 
+In this node-Modules Folder we bring in npm packages, and Jest as a "dev-Dependencies".
+Once you have ran all the command your node modules and and package.json will load.
+
+```
+
+```
+
+***Example***
+
+
 > output Folder
 
 > templates Folder
@@ -37,6 +47,9 @@ After all constructors are successfully tested proceed to make a render.js file
 
 > app.js
 
+## Resource Reference 
+
+- [JEST](https://jestjs.io/docs/en/getting-started)
 
 ## LINKS
 
