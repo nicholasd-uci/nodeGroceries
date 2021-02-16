@@ -71,7 +71,7 @@ We use Jest to help us test all of our function and make sure they "pass" prior 
 
 > app.js
 
-![]()
+![appJS](./gifs/appJS.gif)
 
 ## Resource Reference 
 
