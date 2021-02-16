@@ -24,6 +24,7 @@ In the lib folder short for library folder, consist of all your constructors.
 After all constructors are successfully tested proceed to make a render.js file 
 
 ***Example render.js***
+
 ![constructorRender](./photos/constructorRender.png)
 
 > node_modules
@@ -39,6 +40,7 @@ After all constructors are successfully tested proceed to make a render.js file
 
 ## LINKS
 
+➼ Server-Side Based Repo
 - [GitHub Repo Link](https://github.com/nicholasd-uci/nodeGroceries)
 - [Nicholas Dallas's GitHub](https://github.com/nicholasd-uci)
 
