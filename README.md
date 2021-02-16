@@ -33,10 +33,18 @@ In this node-Modules Folder we bring in npm packages, and Jest as a "dev-Depende
 Once you have ran all the command your node modules and and package.json will load.
 
 ```
-
+Terminal Commands:
+    - npm i || npm init -y
+    - npm install --save-dev jest
 ```
 
-***Example***
+***Example node_modules***
+
+![nodeMods](./gifs/nodeMods.gif)
+
+***Example package.json***
+
+- ![package_json](./photos/package_json.png)
 
 
 > output Folder
@@ -50,6 +58,7 @@ Once you have ran all the command your node modules and and package.json will lo
 ## Resource Reference 
 
 - [JEST](https://jestjs.io/docs/en/getting-started)
+- [NPM](https://www.npmjs.com/package/npm)
 
 ## LINKS
 
