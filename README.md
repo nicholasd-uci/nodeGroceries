@@ -18,11 +18,12 @@ This repository consist of constructors and running test for our constructors. T
 In the lib folder short for library folder, consist of all your constructors. 
 
 ***Example Product.js***
+
 ![constructorProduct](./photos/constructorProduct.png)
 
 After all constructors are successfully tested proceed to make a render.js file 
 
-*** Example render.js***
+***Example render.js***
 ![constructorRender](./photos/constructorRender.png)
 
 > node_modules
